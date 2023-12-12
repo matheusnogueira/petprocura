@@ -27,12 +27,18 @@
     />
 
     <script src="assets/js/includeHTML.js"></script>
-    
+
   </head>
-  <body>
+  <body onload="carregarConteudo('header_bar.html', 'content-change-id')">
     <div class="container-fluid">
-      changeHTML("header_bar.html");
+      <!-- <Script>changeHTML("header_bar.html");</Script> -->
       <!-- <div w3-include-html="header_bar.html"></div> -->
+
+
+      <div id="content-change-id" onload="carregarConteudo('card.html', 'content-change-id');">
+      
+      </div>
+
     </div>
 
     <script
@@ -41,21 +47,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"
       integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    
-    <script>
-      includeHTML();
-    </script>
-
-    <div id="content-change-id">
-      
-    </div>
+      referrerpolicy="no-referrer"></script> -->
 
     <footer class="fixed-bottom text-center bg-gradient">
       <p class="mt-1 mb-1 text-muted text-opacity-50">PetProcura ©2023</p>
